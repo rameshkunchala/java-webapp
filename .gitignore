@@ -1,0 +1,29 @@
+# Maven target folder
+/target/
+**/target/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tomcat generated files
+work/
+temp/
+
+# Compiled classes
+*.class
