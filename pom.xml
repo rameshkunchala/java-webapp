@@ -41,7 +41,23 @@
     </distributionManagement>
 
     <build>
-        <finalName>java-webapp</finalName>
+    <finalName>java-webapp</finalName>
+
+    <plugins>
+        <!-- Java 17+ compatible WAR plugin -->
+        <plugin>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.4.0</version>
+        </plugin>
+
+        <!-- SonarQube -->
+        <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>5.1.0.4751</version>
+        </plugin>
+    </plugins>
+    </build>
 
         <plugins>
             <!-- SonarQube Maven plugin -->
